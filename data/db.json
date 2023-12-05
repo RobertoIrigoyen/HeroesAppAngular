@@ -153,38 +153,12 @@
       "characters": "Clinton Francis Barton"
     },
     {
-      "id": "marvel-cyclops",
-      "superhero": "Cyclops",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Scott Summers",
-      "first_appearance": "X-Men #1",
-      "characters": "Scott Summers"
-    },
-    {
       "id": "marvel-silver",
       "superhero": "Silver Surfer",
       "publisher": "Marvel Comics",
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
-    },
-    {
-      "id": "IeTEfNb",
-      "superhero": "Aqueron",
-      "publisher": "DC Comics",
-      "alter_ego": "Ash",
-      "first_appearance": "Atlantis",
-      "characters": "Ash",
-      "alt_image": "https://3.bp.blogspot.com/-6i7ZIstroIs/UZKVWNcagLI/AAAAAAAAKII/B5rDobzaO7g/s1600/acheron_by_eksmo-d5jppi8.jpg"
-    },
-    {
-      "id": "PW8MN6U",
-      "superhero": "Yo",
-      "publisher": "DC Comics",
-      "alter_ego": "cualquiera",
-      "first_appearance": "si",
-      "characters": "Yo",
-      "alt_image": ""
     }
   ]
 }
