@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from '../../../auth/services/auth.service';
+import { User } from 'src/app/auth/interfaces/user.interface';
 
 @Component({
   selector: 'app-layout-page',
@@ -7,15 +10,27 @@ import { Component } from '@angular/core';
 })
 export class LayoutPageComponent {
 
-  public sidebarItems=[
+  public sidebarItems = [
     {
-      label:'Listado',icon: 'label', url:'./list'
+      label: 'Listado', icon: 'label', url: './list'
     },
     {
-      label:'Añadir',icon: 'add', url:'./new-hero'
+      label: 'Añadir', icon: 'add', url: './new-hero'
     },
     {
-      label:'Buscar',icon: 'search', url:'./search'
+      label: 'Buscar', icon: 'search', url: './search'
     },
   ]
+
+  constructor(private authService: AuthService,
+    private router: Router) { }
+
+  get currentUser(): User | undefined {
+    return this.authService.currentUser;
+  }
+
+  onLogOut() {
+    this.authService.logout();
+    this.router.navigate(['/auth/login'])
+  }
 }
